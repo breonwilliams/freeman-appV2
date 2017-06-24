@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/freeman-logo.png">
-    <title>Ample Admin Template - The Ultimate Multipurpose admin template</title>
+    <title>Freeman Capital</title>
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Menu CSS -->
@@ -206,11 +206,11 @@
                             </div>
                         </li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#"><i class="ti-user"></i> My Profile</a></li>
+                        <li><a href="profile.html"><i class="ti-user"></i> My Profile</a></li>
                         <li><a href="#"><i class="ti-wallet"></i> My Balance</a></li>
                         <li><a href="#"><i class="ti-archive"></i> Add Funds</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
+                        <li><a href="settings.html"><i class="ti-settings"></i> Account Setting</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="login.html"><i class="fa fa-power-off"></i> Logout</a></li>
                     </ul>
@@ -235,11 +235,11 @@
                 <li class="user-pro">
                     <a href="#" class="waves-effect"><img src="../plugins/images/users/breon.jpg" alt="user-img" class="img-circle"> <span class="hide-menu"> Breon Williams<span class="fa arrow"></span></span>
                     </a>
-                    <ul class="nav nav-second-level collapse" aria-expanded="false" style="height: 0px;">
-                        <li><a href="javascript:void(0)"><i class="ti-user"></i> <span class="hide-menu">My Profile</span></a></li>
+                    <ul class="nav nav-second-level collapse" aria-expanded="false">
+                        <li><a href="profile.html"><i class="ti-user"></i> <span class="hide-menu">My Profile</span></a></li>
                         <li><a href="javascript:void(0)"><i class="ti-wallet"></i> <span class="hide-menu">My Balance</span></a></li>
                         <li><a href="javascript:void(0)"><i class="ti-archive"></i> <span class="hide-menu">Add Funds</span></a></li>
-                        <li><a href="javascript:void(0)"><i class="ti-settings"></i> <span class="hide-menu">Account Setting</span></a></li>
+                        <li><a href="settings.html"><i class="ti-settings"></i> <span class="hide-menu">Account Setting</span></a></li>
                         <li><a href="javascript:void(0)"><i class="fa fa-power-off"></i> <span class="hide-menu">Logout</span></a></li>
                     </ul>
                 </li>
@@ -274,7 +274,7 @@
         <div class="container-fluid">
             <div class="row bg-title">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                    <h4 class="page-title">Dashboard</h4> </div>
+                    <h4 class="page-title">My Profile</h4> </div>
                 <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                     <button class="right-side-toggle waves-effect waves-light btn-info btn-circle pull-right m-l-20"><i class="ti-settings text-white"></i></button>
 
@@ -288,63 +288,91 @@
                     </div>
 
                     <ol class="breadcrumb">
-                        <li class="active">Dashboard</li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li class="active">My Profile</li>
                     </ol>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
+
             <div class="row">
-                <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="col-md-4 col-xs-12">
                     <div class="white-box">
-                        <h3 class="box-title"><small class="pull-right m-t-10 text-success"><i class="fa fa-sort-asc"></i> 18% High then last month</small> Goal 1</h3>
-                        <div class="stats-row">
-                            <div class="stat-item">
-                                <h6>Overall Growth</h6> <b>80.40%</b></div>
-                            <div class="stat-item">
-                                <h6>Montly</h6> <b>15.40%</b></div>
-                            <div class="stat-item">
-                                <h6>Day</h6> <b>5.50%</b></div>
+                        <div class="user-bg"> <img width="100%" alt="user" src="../plugins/images/users/breon.jpg">
+                            <div class="overlay-box">
+                                <div class="user-content">
+                                    <a href="javascript:void(0)"><img src="../plugins/images/users/breon.jpg" class="thumb-lg img-circle" alt="img"></a>
+                                    <h4 class="text-white">breonwilliams</h4>
+                                    <h5 class="text-white">breon@gmail.com</h5> </div>
+                            </div>
                         </div>
-                        <div id="sparkline8"></div>
+
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="col-md-8 col-xs-12">
                     <div class="white-box">
-                        <h3 class="box-title"><small class="pull-right m-t-10 text-danger"><i class="fa fa-sort-desc"></i> 18% High then last month</small>Goal 2</h3>
-                        <div class="stats-row">
-                            <div class="stat-item">
-                                <h6>Overall Growth</h6> <b>80.40%</b></div>
-                            <div class="stat-item">
-                                <h6>Montly</h6> <b>15.40%</b></div>
-                            <div class="stat-item">
-                                <h6>Day</h6> <b>5.50%</b></div>
+                        <ul class="nav nav-tabs tabs customtab">
+                            <li class="active tab">
+                                <a href="#home" data-toggle="tab"> <span class="visible-xs"><i class="fa fa-home"></i></span> <span class="hidden-xs">Activity</span> </a>
+                            </li>
+                            <li class="tab">
+                                <a href="#profile" data-toggle="tab"> <span class="visible-xs"><i class="fa fa-user"></i></span> <span class="hidden-xs">Profile</span> </a>
+                            </li>
+                            <li class="tab">
+                                <a href="settings.html"> <span class="visible-xs"><i class="fa fa-cog"></i></span> <span class="hidden-xs">Settings</span> </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="home">
+                                <div class="steamline">
+                                    <div class="sl-item">
+                                        <div class="sl-left"> <img src="../plugins/images/users/breon.jpg" alt="user" class="img-circle" /> </div>
+                                        <div class="sl-right">
+                                            <div class="m-l-40"><a href="#" class="text-info">Breon Williams</a> <span class="sl-date">5 minutes ago</span>
+                                                <p class="m-t-10"> Withdrew $500 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sl-item">
+                                        <div class="sl-left"> <img src="../plugins/images/users/breon.jpg" alt="user" class="img-circle" /> </div>
+                                        <div class="sl-right">
+                                            <div class="m-l-40"><a href="#" class="text-info">Breon Williams</a> <span class="sl-date">2 weeks ago</span>
+                                                <p class="m-t-10"> Deposited $10,000 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="profile">
+                                <div class="row">
+                                    <div class="col-md-3 col-xs-6 b-r"> <strong>Full Name</strong>
+                                        <br>
+                                        <p class="text-muted">Breon Williams</p>
+                                    </div>
+                                    <div class="col-md-3 col-xs-6 b-r"> <strong>Mobile</strong>
+                                        <br>
+                                        <p class="text-muted">(123) 456 7890</p>
+                                    </div>
+                                    <div class="col-md-3 col-xs-6 b-r"> <strong>Email</strong>
+                                        <br>
+                                        <p class="text-muted">breon@gmail.com</p>
+                                    </div>
+                                    <div class="col-md-3 col-xs-6"> <strong>Location</strong>
+                                        <br>
+                                        <p class="text-muted">Greensboro, NC</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <a href="settings.html" class="btn btn-primary pull-right">Edit Profile</a>
+                                <div class="clearfix"></div>
+                            </div>
+
+
                         </div>
-                        <div id="sparkline9"></div>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <div class="white-box">
-                        <h3 class="box-title"><small class="pull-right m-t-10 text-success"><i class="fa fa-sort-asc"></i> 18% High then last month</small>Goal 3</h3>
-                        <div class="stats-row">
-                            <div class="stat-item">
-                                <h6>Overall Growth</h6> <b>80.40%</b></div>
-                            <div class="stat-item">
-                                <h6>Montly</h6> <b>15.40%</b></div>
-                            <div class="stat-item">
-                                <h6>Day</h6> <b>5.50%</b></div>
-                        </div>
-                        <div id="sparkline10"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="white-box">
-                        <h3 class="box-title">The Academy</h3> </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="white-box">
-                        <h3 class="box-title">Freeman News</h3> </div>
                 </div>
             </div>
             <!-- ============================================================== -->
