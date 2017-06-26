@@ -108,8 +108,8 @@ body {
 .tabs-vertical li.active a,
 .tabs-vertical li.active a:hover,
 .tabs-vertical li.active a:focus {
-  background: #ff7676;
-  border-right: 2px solid #ff7676;
+  background: #f0b146;
+  border-right: 2px solid #f0b146;
 }
 /*Nav-pills*/
 .nav-pills > li.active > a,

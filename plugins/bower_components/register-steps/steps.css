@@ -1,8 +1,8 @@
 /*form styles*/
 #msform {
-max-width: 600px;
+max-width: 800px;
 margin: 20px auto;
-text-align: center;
+/*text-align: center;*/
 position: relative;
 }
 #msform fieldset {
@@ -36,7 +36,7 @@ font-size: 13px;
 /*buttons*/
 #msform .action-button {
 width: 100px;
-background: #2cabe3;
+background: #f0b146;
 font-weight: bold;
 color: white;
 border: 0 none;
@@ -45,11 +45,27 @@ cursor: pointer;
 padding: 10px 5px;
 margin: 10px 5px;
 }
+
+#msform .action-button-link {
+    width: 100px;
+    background: #f0b146;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 25px;
+    margin: 10px 5px;
+}
 #msform .action-button.previous {
     background: #4c5667;
 }
 #msform .action-button:hover, #msform .action-button:focus {
-box-shadow: 0 0 0 2px white, 0 0 0 3px #2cabe3;
+box-shadow: 0 0 0 2px white, 0 0 0 3px #f0b146;
+}
+
+#msform .action-button-link:hover, #msform .action-button-link:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #f0b146;
 }
 /*headings*/
 .fs-title {
@@ -71,12 +87,13 @@ overflow: hidden;
 padding-left: 0px;
 /*CSS counters to number the steps*/
 counter-reset: step;
+    text-align: center;
 }
 #eliteregister li {
 list-style-type: none;
 color: #686868;
 font-size: 13px;
-width: 33.33%;
+width: 12.5%;
 float: left;
 position: relative;
    
@@ -113,6 +130,6 @@ content: none;
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
 #eliteregister li.active:before, #eliteregister li.active:after {
-background: #53e69d;
+background: #f0b146;
 color: #fff;
 }

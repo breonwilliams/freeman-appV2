@@ -27,13 +27,13 @@ jQuery(document).ready(function($) {
 				            items:2
 				        },
 				        700:{
-				            items:4
+				            items:3
 				        },
 				        1000:{
 				            items:3
 				        },
 				        1100:{
-				            items:5
+				            items:3
 				        }
 				    }
 				})
