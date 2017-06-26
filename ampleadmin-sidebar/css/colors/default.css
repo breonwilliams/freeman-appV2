@@ -148,3 +148,9 @@ body {
 .panel-theme a:hover {
   color: #ff2a2a;
 }
+
+.registration-bg-img {
+  background: url(../../../plugins/images/meeting.jpg) center center/cover no-repeat!important;
+  width: 100%;
+  height: 100%;
+}
