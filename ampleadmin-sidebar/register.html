@@ -14,10 +14,15 @@
     <link href="css/animate.css" rel="stylesheet">
     <!-- Wizard CSS -->
     <link href="../plugins/bower_components/register-steps/steps.css" rel="stylesheet">
+    <!--Range slider CSS -->
+    <link href="../plugins/bower_components/ion-rangeslider/css/ion.rangeSlider.css" rel="stylesheet">
+    <link href="../plugins/bower_components/ion-rangeslider/css/ion.rangeSlider.skinModern.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
     <!-- color CSS -->
     <link href="css/colors/default.css" id="theme"  rel="stylesheet">
+    <!-- site loader CSS -->
+    <link href="../plugins/bower_components/site-loader/css/site-loader-style.css" id="theme"  rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -39,42 +44,17 @@
             <form id="msform" >
                 <!-- progressbar -->
                 <ul id="eliteregister">
-                    <li class="active">Create your account</li>
-                    <li>Welcome</li>
+                    <li class="active">Welcome</li>
                     <li>Employment Status</li>
                     <li>Income</li>
                     <li>Create a goal</li>
                     <li>Trading Program</li>
+                    <li>Documents</li>
                     <li>Make a deposit</li>
                     <li>Dashboard</li>
                 </ul>
                 <!-- fieldsets -->
-                <fieldset>
-                    <h2 class="fs-title">Create your account</h2>
-                    <h3 class="fs-subtitle">This is step 1</h3>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <input type="text" name="email" placeholder="First Name" />
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" name="email" placeholder="Last Name" />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label class="control-label">Date of Birth</label>
-                            <input type="text" placeholder="dd/mm/yyyy">
-                        </div>
-                        <div class="col-md-6">
-                            <label class="control-label">Phone Number</label>
-                            <input type="text" placeholder="(xxx) xxx-xxxx">
-                        </div>
-                    </div>
-                    <input type="text" name="email" placeholder="Email" />
-                    <input type="password" name="pass" placeholder="Password" />
-                    <input type="password" name="cpass" placeholder="Confirm Password" />
-                    <input type="button" name="next" class="next action-button" value="Next" />
-                </fieldset>
+
                 <fieldset>
                     <h2 class="fs-title">Welcome to Freeman Capital</h2>
                     <h3 class="fs-subtitle">Thank you for taking flight with us. We are excited to have you on board. Let’s get some information to get you started on your journey.</h3>
@@ -453,20 +433,14 @@
                 <fieldset>
                     <h2 class="fs-title">Let’s Create a	Goal and Start Saving</h2>
                     <h3 class="fs-subtitle">Our	investor profile will help us learn	about you so we	can	recommend the best-automated trading program to start your goal.</h3>
-                    <label class="m-b-15 m-t-30">When	do you want to begin withdrawing money from	your account?</label>
+                    <label class="m-b-15 ">When do you want to begin withdrawing money from	your account?</label>
                     <select class="form-control">
                         <option disabled selected value> Select</option>
                         <option value="AF">Option 1</option>
                         <option value="AF">Option 2</option>
                         <option value="AF">Option 3</option>
                     </select>
-                    <label class="m-b-15 m-t-30">When investing your money, what matters to you most?</label>
-                    <select class="form-control">
-                        <option disabled selected value> Select</option>
-                        <option value="AF">Option 1</option>
-                        <option value="AF">Option 2</option>
-                        <option value="AF">Option 3</option>
-                    </select>
+
                     <label class="m-b-15 m-t-30">Consider this scenario: Image that in the past three months, the overall stock market lost 25% of its value. An individual stock investment you own also lost 25% of it’s value. What would you do?</label>
                     <select class="form-control">
                         <option disabled selected value> Select</option>
@@ -510,41 +484,42 @@
 
                 <fieldset>
                     <h2 class="fs-title">Based on your profile, for your goal we recommend:</h2>
-                    <label class="m-b-30 m-t-15">Tulsa Trading Program</label>
 
-                    <div class="vtabs">
-                        <ul class="nav tabs-vertical">
-                            <li class="tab active">
-                                <a data-toggle="tab" href="#home3" aria-expanded="true"> <span class="visible-xs"><i class="ti-home"></i></span> <span class="hidden-xs">Tulsa Trading Program</span> </a>
-                            </li>
-                            <li class="tab">
-                                <a data-toggle="tab" href="#profile3" aria-expanded="false"> <span class="visible-xs"><i class="ti-user"></i></span> <span class="hidden-xs">Trading Program 2</span> </a>
-                            </li>
-                            <li class="tab">
-                                <a aria-expanded="false" data-toggle="tab" href="#messages3"> <span class="visible-xs"><i class="ti-email"></i></span> <span class="hidden-xs">Trading Program 3</span> </a>
-                            </li>
-                        </ul>
-                        <div class="tab-content">
-                            <div id="home3" class="tab-pane active">
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-
-                            </div>
-                            <div id="profile3" class="tab-pane">
-                                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
-                            </div>
-                            <div id="messages3" class="tab-pane">
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                            </div>
-                        </div>
+                    <h3>Tulsa Program</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <div id="range_01"></div>
+                    <label class=" m-t-15">You have selected: <strong>Tulsa Trading Program</strong></label>
+                    <div class="checkbox checkbox-success">
+                        <input id="checkbox33" type="checkbox">
+                        <label for="checkbox33">DISCLAIMER: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </label>
                     </div>
 
-                    <select class="form-control m-t-40 m-b-30">
-                        <option disabled selected value> Select Program</option>
-                        <option value="AF">Option 1</option>
-                        <option value="AF">Option 2</option>
-                        <option value="AF">Option 3</option>
-                    </select>
 
+
+                    <input type="button" name="previous" class="previous action-button" value="Previous" />
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset>
+                    <h2 class="fs-title">Please E-Sign These Documents</h2>
+
+                    <table class="table table-hover">
+                        <tbody>
+                        <tr class="unread">
+
+                            <td class="max-texts"> <a href="inbox-detail.html">Limited Power of Attorney</a></td>
+                            <td class="hidden-xs"><a href="#" class="btn btn-link">View</a></td>
+
+
+                        </tr>
+                        <tr class="unread">
+
+                            <td class="max-texts"> <a href="inbox-detail.html">Advisory Agreement</a></td>
+                            <td class="hidden-xs"><a href="#" class="btn btn-link">Sign</a></td>
+
+
+                        </tr>
+                        </tbody>
+                    </table>
 
                     <input type="button" name="previous" class="previous action-button" value="Previous" />
                     <input type="button" name="next" class="next action-button" value="Next" />
@@ -552,7 +527,7 @@
                 <fieldset>
                     <h2 class="fs-title">Now It’s Time to Make a Deposit</h2>
                     <h3 class="fs-subtitle">Open your account with our Broker and make your deposit</h3>
-
+                    <div id="siteloader"></div>
 
                     <input type="button" name="previous" class="previous action-button" value="Previous" />
                     <input type="button" name="next" class="next action-button" value="Next" />
@@ -563,7 +538,16 @@
                     <h3 class="fs-subtitle">My goal is to save for: New Home</h3>
                     <h3 class="fs-subtitle">I will deposit <strong>$400.00 USD</strong> every <strong>2 weeks</strong> to reach it.</h3>
                     <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <a href="dashboard.html" class="next action-button-link" >Submit</a>
+                    <a href="dashboard.html" class="next action-button-link" >Continue to my dashboard</a>
+
+                    <div class="row m-t-30">
+                        <div class="col-md-8">
+                            <p>I just started an investment goal with Freeman Capital. Click here to start yours</p>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" class="btn btn-primary">Share</a>
+                        </div>
+                    </div>
                 </fieldset>
             </form>
             <div class="clear"></div>
@@ -582,9 +566,14 @@
 <script src="js/jquery.slimscroll.js"></script>
 <!--Wave Effects -->
 <script src="js/waves.js"></script>
+<!-- Range slider  -->
+<script src="../plugins/bower_components/ion-rangeslider/js/ion-rangeSlider/ion.rangeSlider.min.js"></script>
+<script src="../plugins/bower_components/ion-rangeslider/js/ion-rangeSlider/ion.rangeSlider-init.js"></script>
 <!-- Custom Theme JavaScript -->
 <script src="js/custom.min.js"></script>
 <!--Style Switcher -->
 <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+<!--site loader -->
+<script src="../plugins/bower_components/site-loader/js/site-loader-init.js"></script>
 </body>
 </html>

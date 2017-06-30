@@ -1,0 +1,8 @@
+#siteloader {
+    height: 99%;
+}
+
+#siteloader object {
+    width: 100%;
+    min-height: 600px;
+}
