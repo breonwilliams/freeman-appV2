@@ -24,6 +24,9 @@
     <!-- chartist CSS -->
     <link href="../plugins/bower_components/chartist-js/dist/chartist.min.css" rel="stylesheet">
     <link href="../plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <!--Range slider CSS -->
+    <link href="../plugins/bower_components/ion-rangeslider/css/ion.rangeSlider.css" rel="stylesheet">
+    <link href="../plugins/bower_components/ion-rangeslider/css/ion.rangeSlider.skinModern.css" rel="stylesheet">
 
     <link href="../plugins/bower_components/owl.carousel/owl.carousel.min.css" rel="stylesheet" type="text/css" />
     <link href="../plugins/bower_components/owl.carousel/owl.theme.default.css" rel="stylesheet" type="text/css" />
@@ -172,9 +175,9 @@
                     </ul>
                 </li>
                 <li class="devider"></li>
-                <li><a href="javascript:void(0)" class="waves-effect right-side-toggle"> <span class="hide-menu">Education and News</span></a></li>
+                <li><a href="javascript:void(0)" class="waves-effect "> <span class="hide-menu">Education and News</span></a></li>
                 <li class="devider"></li>
-                <li><a href="javascript:void(0)" class="waves-effect right-side-toggle"> <span class="hide-menu">Help</span></a></li>
+                <li><a href="javascript:void(0)" class="waves-effect "> <span class="hide-menu">Help</span></a></li>
                 <li class="devider"></li>
                 <li><a href="login.html" class="waves-effect"><i class="mdi mdi-logout fa-fw"></i> <span class="hide-menu">Log out</span></a></li>
                 <li class="devider"></li>
@@ -221,6 +224,38 @@
                         </div>
                         <div id="sparkline16"></div>
                     </div>
+
+                    <button class="btn btn-primary " data-toggle="modal" data-target=".bs-example-modal-lg">Modify Goal</button>
+                    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <h4 class="modal-title" id="myLargeModalLabel">Tulsa Program</h4> </div>
+                                <div class="modal-body">
+
+                                    <h2 class="fs-title">Based on your profile, for your goal we recommend:</h2>
+
+                                    <h3>Tulsa Program</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                    <div id="range_01"></div>
+                                    <label class=" m-t-15">You have selected: <strong>Tulsa Trading Program</strong></label>
+                                    <div class="checkbox checkbox-success">
+                                        <input id="checkbox33" type="checkbox">
+                                        <label for="checkbox33">DISCLAIMER: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </label>
+                                    </div>
+
+                                    <a href="javascript:void(0)" class="btn btn-success">Update Goal</a>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="javascript:void(0)" type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">Close</a>
+                                </div>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+
                 </div>
 
                 <div class="col-md-6">
@@ -257,46 +292,7 @@
             <!-- Right sidebar -->
             <!-- ============================================================== -->
             <!-- .right-sidebar -->
-            <div class="right-sidebar">
-                <div class="slimscrollright">
-                    <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span> </div>
-                    <div class="r-panel-body">
-                        <label>Website</label>
-                        <p><a href="http://freemancapital.co/">freemancapital.co</a></p>
-                        <label>Contact Us</label>
-                        <form class="form-horizontal">
-                            <div class="form-group">
-                                <label class="col-md-12">First Name</label>
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" value="First name"> </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-12">Last Name</label>
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" value="Last name"> </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-12" for="example-email">Email <span class="help"> e.g. "example@gmail.com"</span></label>
-                                <div class="col-md-12">
-                                    <input type="email" id="example-email" name="example-email" class="form-control" placeholder="Email"> </div>
-                            </div>
 
-                            <div class="form-group">
-                                <label class="col-md-12">Phone Number</label>
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" placeholder="xxx-xxx-xxxx"> </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-12">Text area</label>
-                                <div class="col-md-12">
-                                    <textarea class="form-control" rows="5"></textarea>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary ">Submit</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
             <!-- ============================================================== -->
             <!-- End Right sidebar -->
             <!-- ============================================================== -->
@@ -329,6 +325,9 @@
 <!-- jQuery for carousel -->
 <script src="../plugins/bower_components/owl.carousel/owl.carousel.min.js"></script>
 <script src="../plugins/bower_components/owl.carousel/owl.custom.js"></script>
+<!-- Range slider  -->
+<script src="../plugins/bower_components/ion-rangeslider/js/ion-rangeSlider/ion.rangeSlider.min.js"></script>
+<script src="../plugins/bower_components/ion-rangeslider/js/ion-rangeSlider/ion.rangeSlider-init.js"></script>
 </body>
 
 </html>
