@@ -169,6 +169,18 @@ body {
   padding: 10px 25px;
   margin: 10px 5px;
 }
+
+#sform .previous.action-button-link {
+  width: 100px;
+  background: #4c5667;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 25px;
+  margin: 10px 5px;
+}
 #sform .action-button.previous {
   background: #4c5667;
 }
