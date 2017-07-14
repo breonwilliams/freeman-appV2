@@ -25,6 +25,8 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <!-- site loader CSS -->
+    <link href="../plugins/bower_components/site-loader/css/site-loader-style.css" id="theme"  rel="stylesheet">
     <![endif]-->
 </head>
 
@@ -41,22 +43,19 @@
     <div class="row">
         <div class="col-md-6 col-md-offset-3 m-t-40 m-b-40">
             <div class="white-box">
-                <p class="lead text-center">Open your account</p>
+                <p class="lead text-center">Make a deposit</p>
                 <div class="progress progress-lg">
-                    <div class="progress-bar progress-bar-warning" style="width: 70%;" role="progressbar"></div>
+                    <div class="progress-bar progress-bar-warning" style="width: 80%;" role="progressbar"></div>
                 </div>
                 <form id="sform">
                     <fieldset>
-                        <p class="lead m-b-40">My goal is to <input style="background-color: transparent; border-style: solid; border-width: 0px 0px 1px 0px; border-color: #cccccc;" value="" id="answer1"> by <input style="background-color: transparent; border-style: solid; border-width: 0px 0px 1px 0px; border-color: #cccccc;" value="" id="answer1"></p>
-                        <p class="lead">I will meet this goal by depositing <input style="background-color: transparent; border-style: solid; border-width: 0px 0px 1px 0px; border-color: #cccccc;" value="" id="answer1"> every <input style="background-color: transparent; border-style: solid; border-width: 0px 0px 1px 0px; border-color: #cccccc;" value="" id="answer1"></p>
-
+                        <h2 class="fs-title">Now It’s Time to Make a Deposit</h2>
+                        <h3 class="fs-subtitle">Open your account with our Broker and make your deposit</h3>
+                        <div id="siteloader"></div>
 
                     </fieldset>
-                    <div class="m-b-40"></div>
 
                     <a href="register-step6.html" class="previous action-button-link" >Previouse</a> <a href="register-step8.html" class="next action-button-link" >Next</a>
-
-
                 </form>
 
             </div>
@@ -81,6 +80,8 @@
 <script src="js/custom.min.js"></script>
 <!--Style Switcher -->
 <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+<!--site loader -->
+<script src="../plugins/bower_components/site-loader/js/site-loader-init.js"></script>
 </body>
 
 </html>
