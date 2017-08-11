@@ -7,3 +7,5 @@ $("#siteloader").html('<object data="https://apply.forex.com/NewOLS_FRXC_EN/appl
 $("#siteloaderDeposit").html('<object data="https://myaccount.forex.com/Home.aspx?docId=1,0" />');
 
 $("#siteloaderWithdraw").html('<object data="https://myaccount.forex.com/Home.aspx?docId=1,2" />');
+
+$("#siteloaderHelp").html('<object data="http://help.freemancapital.co" />');

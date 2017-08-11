@@ -1,8 +1,8 @@
-#siteloader, #siteloaderDeposit, #siteloaderWithdraw {
+#siteloader, #siteloaderDeposit, #siteloaderWithdraw, #siteloaderHelp {
     height: 99%;
 }
 
-#siteloader object, #siteloaderDeposit object, #siteloaderWithdraw object {
+#siteloader object, #siteloaderDeposit object, #siteloaderWithdraw object, #siteloaderHelp object {
     width: 100%;
     min-height: 600px;
     margin-bottom: 40px;
