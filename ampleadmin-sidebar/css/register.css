@@ -4,6 +4,7 @@
     color: #58666e;
     padding: 20px 30px;
     background: #f1f1f1;
+    border-top: solid 1px #e1e1e1;
 }
 
 .footer-register ul.list-inline {
@@ -12,4 +13,12 @@
 
 .footer-register ul.list-inline a {
     color: #999;;
+}
+
+.bordered-box {
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0 1px 0 rgba(0,0,0,0.1), 0 -1px 0 rgba(0,0,0,0.1), 1px 0 0 rgba(0,0,0,0.1), -1px 0 0 rgba(0,0,0,0.1);
+}
+
+body {
+    background: #eee!important;
 }

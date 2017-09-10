@@ -17,9 +17,6 @@
     <link href="css/style.css" rel="stylesheet">
     <!-- register CSS -->
     <link href="css/register.css" rel="stylesheet">
-    <!--Range slider CSS -->
-    <link href="../plugins/bower_components/ion-rangeslider/css/ion.rangeSlider.css" rel="stylesheet">
-    <link href="../plugins/bower_components/ion-rangeslider/css/ion.rangeSlider.skinModern.css" rel="stylesheet">
     <!-- color CSS -->
     <link href="css/colors/default.css" id="theme"  rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -43,20 +40,52 @@
     <div class="row">
         <div class="col-md-6 col-md-offset-3 m-t-40 m-b-40">
             <div class="white-box bordered-box">
-                <p class="lead text-center">End</p>
+                <p class="lead text-center">Start</p>
                 <div class="progress progress-lg">
-                    <div class="progress-bar progress-bar-warning" style="width: 100%;" role="progressbar"><i class="fa fa-check"></i></div>
+                    <div class="progress-bar progress-bar-warning" style="width: 15%;" role="progressbar"></div>
                 </div>
+                <h2>Start Your Financial Journey Now</h2>
+                <p>Thank you for taking flight with us. We are excited to have you on board. Let's get some information to get you started on your journey.</p>
                 <form id="sform">
                     <fieldset>
-                        <h2 class="fs-title">Congratulations, you are now a part of the freeman family.</h2>
+
+                        <!-- Text input-->
+                        <div class="row">
+                            <div class="col-md-6 m-b-20 m-t-20">
+                                <input type="text" name="first_name" placeholder="First Name" class="form-control" />
+                            </div>
+                            <div class="col-md-6 m-b-20 m-t-20">
+                                <input type="text" name="last_name" placeholder="Last Name" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 m-b-20 m-t-20">
+                                <input type="text" name="email" placeholder="Email Address" class="form-control" />
+                            </div>
+                            <div class="col-md-6 m-b-20 m-t-20">
+                                <input type="text" name="phone" placeholder="Phone Number" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 m-b-20 m-t-20">
+                                <input type="text" name="dob" placeholder="Date of Birth" class="form-control" />
+                            </div>
+                            <div class="col-md-6 m-b-20 m-t-20">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 m-b-20 m-t-20">
+                                <input class="form-control" type="password" required="" placeholder="Password">
+                            </div>
+                            <div class="col-md-6 m-b-20 m-t-20">
+                                <input class="form-control" type="password" required="" placeholder="Confirm Password">
+                            </div>
+                        </div>
 
                     </fieldset>
-
                     <div class="m-b-40"></div>
-                    <a href="register-step5.html" class="previous action-button-link" >Previous</a>
-                    <a href="dashboard-null.html" class="next action-button-link" >Continue to my dashboard</a>
-
+                    <a href="register-step1.html" class="next action-button-link" >Create your account</a>
                 </form>
 
             </div>
@@ -80,6 +109,7 @@
         <li><a href="#">Disclosure Document</a></li>
     </ul>
 </footer>
+
 <!-- jQuery -->
 <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap Core JavaScript -->
@@ -90,9 +120,6 @@
 <script src="js/jquery.slimscroll.js"></script>
 <!--Wave Effects -->
 <script src="js/waves.js"></script>
-<!-- Range slider  -->
-<script src="../plugins/bower_components/ion-rangeslider/js/ion-rangeSlider/ion.rangeSlider.min.js"></script>
-<script src="../plugins/bower_components/ion-rangeslider/js/ion-rangeSlider/ion.rangeSlider-init.js"></script>
 <!-- Custom Theme JavaScript -->
 <script src="js/custom.min.js"></script>
 <!--Style Switcher -->
