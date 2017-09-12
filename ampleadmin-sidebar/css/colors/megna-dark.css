@@ -132,7 +132,7 @@ body {
 .chart.easy-pie-chart-4 {
   position: relative;
   display: inline-block;
-  width: 175px;
+  width: 180px;
   height: 180px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -141,7 +141,7 @@ body {
 
 .easy-pie-chart-4 .percent {
   display: inline-block;
-  line-height: 175px;
+  line-height: 180px;
   z-index: 2;
   font-weight: 600;
   font-size: 18px;

@@ -39,7 +39,7 @@
 		$('.easy-pie-chart-4').easyPieChart({
 			easing: 'easeOutBounce',
 			barColor : '#f0b146',
-			lineWidth: 8,
+			lineWidth: 20,
 			size: 180,
 			scaleColor: false,
 			onStep: function(from, to, percent) {
