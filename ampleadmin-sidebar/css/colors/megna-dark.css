@@ -126,3 +126,24 @@ body {
   background: #f0b146;
   color: #ffffff;
 }
+
+/*Pie Charts*/
+
+.chart.easy-pie-chart-4 {
+  position: relative;
+  display: inline-block;
+  width: 175px;
+  height: 180px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.easy-pie-chart-4 .percent {
+  display: inline-block;
+  line-height: 175px;
+  z-index: 2;
+  font-weight: 600;
+  font-size: 18px;
+  color: #313131;
+}

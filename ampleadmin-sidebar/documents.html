@@ -17,8 +17,6 @@
     <link href="css/animate.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-    <!-- site loader -->
-    <link href="../plugins/bower_components/site-loader/css/site-loader-style.css" rel="stylesheet">
     <!-- color CSS -->
     <link href="css/colors/megna-dark.css" id="theme" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -166,7 +164,7 @@
                     </ul>
                 </li>
                 <li class="devider"></li>
-                <li><a href="help.html" class="waves-effect "> <span class="hide-menu">Help</span></a></li>
+                <li><a href="javascript:void(0)" class="waves-effect "> <span class="hide-menu">Help</span></a></li>
                 <li class="devider"></li>
                 <li><a href="login.html" class="waves-effect"><i class="mdi mdi-logout fa-fw"></i> <span class="hide-menu">Log out</span></a></li>
                 <li class="devider"></li>
@@ -183,21 +181,69 @@
         <div class="container-fluid">
             <div class="row bg-title">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                    <h4 class="page-title">Help</h4> </div>
+                    <h4 class="page-title">My Profile</h4> </div>
                 <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
 
 
+                    <div class="btn-group pull-right">
+                        <button type="button" class="btn btn-primary waves-effect waves-light m-l-20 pull-right " data-toggle="dropdown" aria-expanded="false"> Create a new goal </button>
+
+                    </div>
+
                     <ol class="breadcrumb">
-                        <li><a href="#">Dashboard</a></li>
-                        <li class="active">Help</li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li class="active">My Profile</li>
                     </ol>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
+
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-4 col-xs-12">
                     <div class="white-box">
-                        <div id="siteloaderHelp"></div>
+                        <div class="user-bg"> <img width="100%" alt="user" src="../plugins/images/users/breon.jpg">
+                            <div class="overlay-box">
+                                <div class="user-content">
+                                    <a href="javascript:void(0)"><img src="../plugins/images/users/breon.jpg" class="thumb-lg img-circle" alt="img"></a>
+                                    <h4 class="text-white">breonwilliams</h4>
+                                    <h5 class="text-white">breon@gmail.com</h5> </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-8 col-xs-12">
+                    <div class="white-box">
+                        <table class="table table-hover">
+
+                            <tbody>
+                            <tr class="unread">
+
+                                <td class="max-texts"> <a href="inbox-detail.html" />Limited Power of Attorney</td>
+                                <td class="hidden-xs"><a href="#" class="btn btn-link">View</a></td>
+                                </td>
+                                <td class="text-right"> <span class="label label-warning m-r-10">Pending</span> </td>
+                            </tr>
+                            <tr class="unread">
+
+                                <td class="max-texts"> <a href="inbox-detail.html" />Advisory Agreement</td>
+                                <td class="hidden-xs"><a href="#" class="btn btn-link">Sign</a></td>
+                                </td>
+                                <td class="text-right"> <span class="label label-warning m-r-10">Awaiting Signature</span> </td>
+                            </tr>
+
+
+
+
+
+
+
+
+
+
+                            </tbody>
+                        </table>
+
                     </div>
                 </div>
             </div>
@@ -230,9 +276,11 @@
 <script src="js/waves.js"></script>
 <!-- Custom Theme JavaScript -->
 <script src="js/custom.min.js"></script>
+<!-- jQuery peity -->
+<script src="../plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
+<script src="../plugins/bower_components/jquery-sparkline/jquery.charts-sparkline.js"></script>
 <!--Style Switcher -->
 <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
-<script src="../plugins/bower_components/site-loader/js/site-loader-init.js"></script>
 </body>
 
 </html>
