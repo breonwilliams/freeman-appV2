@@ -214,7 +214,7 @@
                 </div>
                 <div class="col-md-8 col-xs-12">
                     <div class="white-box">
-                        <div class="row">
+                        <div class="row m-b-20">
                             <div class="col-md-4 col-xs-6 b-r"> <strong>Full Name</strong>
                                 <br>
                                 <p class="text-muted">Breon Williams</p>
@@ -222,11 +222,14 @@
                             <div class="col-md-4 col-xs-6 b-r"> <strong>Address</strong>
                                 <br>
                                 <p class="text-muted">555 Jackson St.</p>
+                                <p class="text-muted">Apt. 1B</p>
                             </div>
                             <div class="col-md-4 col-xs-6 "> <strong>City</strong>
                                 <br>
                                 <p class="text-muted">Greensboro</p>
                             </div>
+                        </div>
+                        <div class="row m-b-20">
                             <div class="col-md-4 col-xs-6 b-r"> <strong>State</strong>
                                 <br>
                                 <p class="text-muted">NC</p>
@@ -241,7 +244,230 @@
                             </div>
                         </div>
 
-                        <a href="#" class="btn btn-primary pull-right btn-outline">Edit</a>
+                        <div class="row m-b-20">
+                            <div class="col-md-4 col-xs-6 b-r"> <strong>Phone</strong>
+                                <br>
+                                <p class="text-muted">123 456 7890</p>
+                            </div>
+                            <div class="col-md-4 col-xs-6 b-r"> <strong>Birthday</strong>
+                                <br>
+                                <p class="text-muted">12/31/1983</p>
+                            </div>
+                            <div class="col-md-4 col-xs-6 "> <strong>Annual Income</strong>
+                                <br>
+                                <p class="text-muted">$90,000.00</p>
+                            </div>
+                        </div>
+
+                        <div class="row m-b-20">
+                            <div class="col-md-4 col-xs-6 b-r"> <strong>Liquid Net Worth</strong>
+                                <br>
+                                <p class="text-muted">$120,000.00</p>
+                            </div>
+                            <div class="col-md-4 col-xs-6 b-r"> <strong>Employment Status</strong>
+                                <br>
+                                <p class="text-muted">Employed</p>
+                            </div>
+                            <div class="col-md-4 col-xs-6 "> <strong>Employer Name</strong>
+                                <br>
+                                <p class="text-muted">Functional Movement</p>
+                            </div>
+                        </div>
+
+                        <div class="row m-b-20">
+                            <div class="col-md-4 col-xs-6 b-r"> <strong>Employer's City</strong>
+                                <br>
+                                <p class="text-muted">Greensboro</p>
+                            </div>
+                            <div class="col-md-4 col-xs-6 b-r"> <strong>Employer's State</strong>
+                                <br>
+                                <p class="text-muted">NC</p>
+                            </div>
+
+                        </div>
+
+
+                        <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#changPassword">
+                            Edit
+                        </button>
+                        <div class="clearfix"></div>
+                                <!-- Modal -->
+                        <div class="modal fade" id="changPassword" tabindex="-1" role="dialog" aria-labelledby="ModalTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="ModalTitle">Edit Profile</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="modal-body">
+
+                                        <form class="form-horizontal form-material">
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-md-6 p-b-20">
+                                                        <label class="col-md-12">First Name</label>
+                                                        <div class="col-md-12">
+                                                            <input type="text" placeholder="Breon" class="form-control form-control-line"> </div>
+                                                    </div>
+                                                    <div class="col-md-6 p-b-20">
+                                                        <label class="col-md-12">Last Name</label>
+                                                        <div class="col-md-12">
+                                                            <input type="text" placeholder="Williams" class="form-control form-control-line"> </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-6 p-b-20">
+                                                        <label for="example-email" class="col-md-12">Email</label>
+                                                        <div class="col-md-12">
+                                                            <input type="email" placeholder="breon@gmail.com" class="form-control form-control-line" name="example-email" id="example-email"> </div>
+                                                    </div>
+                                                    <div class="col-md-6 p-b-20">
+                                                        <label class="col-md-12">Password</label>
+                                                        <div class="col-md-12">
+                                                            <input type="password" value="password" class="form-control form-control-line"> </div>
+                                                    </div>
+
+                                                </div>
+
+
+                                                <div class="row">
+                                                    <div class="col-md-6 p-b-20">
+                                                        <label class="col-md-12">Phone No</label>
+                                                        <div class="col-md-12">
+                                                            <input type="text" placeholder="123 456 7890" class="form-control form-control-line"> </div>
+                                                    </div>
+                                                    <div class="col-md-6 p-b-20">
+                                                        <label class="col-md-12">Birthday</label>
+                                                        <div class="col-md-12">
+                                                            <input type="text" placeholder="12/31/1983" class="form-control form-control-line"> </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-6 p-b-20">
+                                                        <label class="col-md-12">Address</label>
+                                                        <div class="col-md-12">
+                                                            <input type="text" placeholder="555 Pisgah Church Rd." class="form-control form-control-line"> </div>
+                                                    </div>
+
+                                                    <div class="col-md-6 p-b-20">
+                                                        <label class="col-md-12">Suite or Apt #</label>
+                                                        <div class="col-md-12">
+                                                            <input type="text" placeholder="1B" class="form-control form-control-line"> </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row">
+
+                                                    <div class="col-md-6 p-b-20">
+                                                        <label class="col-md-12">City</label>
+                                                        <div class="col-md-12">
+                                                            <input type="text" placeholder="Greensboro" class="form-control form-control-line"> </div>
+                                                    </div>
+
+                                                    <div class="col-md-6 p-b-20">
+                                                        <label class="col-md-12">State</label>
+                                                        <div class="col-md-12">
+                                                            <input type="text" placeholder="NC" class="form-control form-control-line"> </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label class="col-md-12">Zip Code</label>
+                                                        <div class="col-md-12">
+                                                            <input type="text" placeholder="27455" class="form-control form-control-line"> </div>
+                                                    </div>
+
+                                                    <div class="col-md-6 p-b-20">
+                                                        <label class="col-sm-12">Select Country</label>
+                                                        <div class="col-sm-12">
+                                                            <select class="form-control form-control-line">
+                                                                <option>Usa</option>
+                                                                <option>London</option>
+                                                                <option>India</option>
+                                                                <option>Canada</option>
+                                                                <option>Thailand</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-6 p-b-20">
+                                                        <label class="col-md-12">Annual Income</label>
+                                                        <div class="col-md-12">
+                                                            <input type="text" placeholder="$90,000" class="form-control form-control-line"> </div>
+                                                    </div>
+
+                                                    <div class="col-md-6 p-b-20">
+                                                        <label class="col-md-12">Liquid Net Worth</label>
+                                                        <div class="col-md-12">
+                                                            <input type="text" placeholder="$120,000" class="form-control form-control-line"> </div>
+                                                    </div>
+
+                                                </div>
+
+
+
+                                                <div class="row">
+                                                    <div class="col-md-6 p-b-20">
+                                                        <label class="col-md-12">Employment Status</label>
+                                                        <div class="col-md-12">
+                                                            <select class="form-control m-b-20">
+                                                                <option value="AF">Employed</option>
+                                                                <option value="AF">Retired</option>
+                                                                <option value="AF">Student</option>
+                                                            </select> </div>
+                                                    </div>
+
+                                                    <div class="col-md-6 p-b-20">
+                                                        <label class="col-md-12">Employer Name</label>
+                                                        <div class="col-md-12">
+                                                            <input type="text" placeholder="Functional Movement" class="form-control form-control-line"> </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row">
+
+                                                    <div class="col-md-6 p-b-20">
+                                                        <label class="col-md-12">Employer's City</label>
+                                                        <div class="col-md-12">
+                                                            <input type="text" placeholder="Greensboro" class="form-control form-control-line"> </div>
+                                                    </div>
+
+                                                    <div class="col-md-6 p-b-20">
+                                                        <label class="col-md-12">Employer's State</label>
+                                                        <div class="col-md-12">
+                                                            <input type="text" placeholder="NC" class="form-control form-control-line"> </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">Update Profile</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
                         <div class="clearfix"></div>
 
                     </div>
