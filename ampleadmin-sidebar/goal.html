@@ -19,6 +19,8 @@
     <link href="css/style.css" rel="stylesheet">
     <!-- color CSS -->
     <link href="css/colors/megna-dark.css" id="theme" rel="stylesheet">
+    <!-- site loader -->
+    <link href="../plugins/bower_components/site-loader/css/site-loader-style.css" rel="stylesheet">
     <!-- morris CSS -->
     <link href="../plugins/bower_components/morrisjs/morris.css" rel="stylesheet">
     <!-- chartist CSS -->
@@ -223,8 +225,8 @@
                         <div id="sparkline16"></div>
                     </div>
 
-                    <button class="btn btn-primary " data-toggle="modal" data-target=".bs-example-modal-lg">Modify Goal</button>
-                    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                    <button class="btn btn-primary " data-toggle="modal" data-target=".modal-modGoal-s1">Modify Goal</button>
+                    <div class="modal fade modal-modGoal-s1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -297,7 +299,111 @@
 
                                         </div>
                                     </form>
+                                    <button class="btn btn-primary " data-toggle="modal" data-dismiss="modal" data-target=".modal-modGoal-s2">Next</button>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="javascript:void(0)" type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">Close</a>
+                                </div>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
 
+                    <!-- modify step 2-->
+
+                    <div class="modal fade modal-modGoal-s2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <h4 class="modal-title" id="myLargeModalLabel">Modify Goal</h4> </div>
+                                <div class="modal-body">
+                                    <p class="lead">Based on your profile, for your goal we recommend:</p>
+                                    <p class="lead"><strong>Tulsa Trading Program</strong></p>
+
+
+                                    <div class="vtabs">
+                                        <ul class="nav tabs-vertical">
+                                            <li class="tab active">
+                                                <a data-toggle="tab" href="#tulsa1" aria-expanded="true"> <span class="visible-xs"><i class="ti-home"></i></span> <span class="hidden-xs">Tulsa Trading Program</span> </a>
+                                            </li>
+                                            <li class="tab">
+                                                <a data-toggle="tab" href="#tulsa2" aria-expanded="false"> <span class="visible-xs"><i class="ti-user"></i></span> <span class="hidden-xs">Tulsa Trading Program 2</span> </a>
+                                            </li>
+                                            <li class="tab">
+                                                <a aria-expanded="false" data-toggle="tab" href="#tulsa3"> <span class="visible-xs"><i class="ti-email"></i></span> <span class="hidden-xs">Tulsa Trading Program 3</span> </a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div id="tulsa1" class="tab-pane active">
+
+                                                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div id="tulsa2" class="tab-pane">
+                                                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                                            </div>
+                                            <div id="tulsa3" class="tab-pane">
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4 p-b-20 col-md-offset-4">
+                                            <div class="col-md-12">
+                                                <select class="form-control form-control-line">
+                                                    <option disabled>Select Program</option>
+                                                    <option>Option 1</option>
+                                                    <option>Option 2</option>
+                                                    <option>Option 3</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <p><button class="btn btn-primary " data-toggle="modal" data-dismiss="modal" data-target=".modal-modGoal-s1">Previous</button> <button class="btn btn-primary " data-toggle="modal" data-dismiss="modal" data-target=".modal-modGoal-s3">Next</button></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="javascript:void(0)" type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">Close</a>
+                                </div>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- modify step 3-->
+                    <div class="modal fade modal-modGoal-s3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <h4 class="modal-title" id="myLargeModalLabel">Modify Goal</h4> </div>
+                                <div class="modal-body">
+                                    <p class="lead">Now it's time to set up your account through our partner, Forex.com.</p>
+                                    <button class="btn btn-primary " data-toggle="modal" data-dismiss="modal" data-target=".modal-modGoal-s2">Previous</button> <button class="btn btn-primary " data-toggle="modal" data-dismiss="modal" data-target=".modal-modGoal-s4">Next</button>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="javascript:void(0)" type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">Close</a>
+                                </div>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- modify step 4-->
+                    <div class="modal fade modal-modGoal-s4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <h4 class="modal-title" id="myLargeModalLabel">Modify Goal</h4> </div>
+                                <div class="modal-body">
+                                    <p class="lead">Congratulations! Your goal has been set up.</p>
+                                     <a href="dashboard.html" class="btn btn-primary">View Dashboard</a>
                                 </div>
                                 <div class="modal-footer">
                                     <a href="javascript:void(0)" type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">Close</a>
@@ -380,6 +486,7 @@
 <!-- Range slider  -->
 <script src="../plugins/bower_components/ion-rangeslider/js/ion-rangeSlider/ion.rangeSlider.min.js"></script>
 <script src="../plugins/bower_components/ion-rangeslider/js/ion-rangeSlider/ion.rangeSlider-init.js"></script>
+<script src="../plugins/bower_components/site-loader/js/site-loader-init.js"></script>
 </body>
 
 </html>
